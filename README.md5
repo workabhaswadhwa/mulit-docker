@@ -1,0 +1,9 @@
+Instead of this:
+
+npm install -g create-react-app
+
+create-react-app client
+
+Just do this:
+
+npx create-react-app client
