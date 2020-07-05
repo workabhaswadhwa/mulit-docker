@@ -11,9 +11,9 @@ script:
 
 after_success:
     - docker build -t workabhaswadhwa/multi-client ./client
-    - docker build -t workabhaswadhwa/mulit-nginx ./nginx
-    - docker build -t workabhaswadhwa/mulit-server ./server
-    - docker build -t workabhaswadhwa/mulit-worker ./worker
+    - docker build -t workabhaswadhwa/multi-nginx ./nginx
+    - docker build -t workabhaswadhwa/multi-server ./server
+    - docker build -t workabhaswadhwa/multi-worker ./worker
 
 #Log into docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
