@@ -16,10 +16,10 @@ after_success:
     - docker build -t workabhaswadhwa/mulit-worker ./worker
 
 #Log into docker CLI
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 #Push images to docker hub
-- docker push workabhaswadhwa/multi-client
-- docker push workabhaswadhwa/multi-nginx
-- docker push workabhaswadhwa/multi-server
-- docker push workabhaswadhwa/multi-worker
+    - docker push workabhaswadhwa/multi-client
+    - docker push workabhaswadhwa/multi-nginx
+    - docker push workabhaswadhwa/multi-server
+    - docker push workabhaswadhwa/multi-worker
